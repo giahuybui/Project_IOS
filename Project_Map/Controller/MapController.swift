@@ -13,7 +13,7 @@ class MapController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print("test");
+        print("test123");
     }
 
 
