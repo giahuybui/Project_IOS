@@ -116,7 +116,7 @@
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logomap" translatesAutoresizingMaskIntoConstraints="NO" id="DqL-0J-olA">
-                                        <rect key="frame" x="45" y="0.0" width="284" height="35.000000000000028"/>
+                                        <rect key="frame" x="45" y="0.0" width="284" height="35"/>
                                         <color key="backgroundColor" red="0.1249227805" green="0.50265527099999996" blue="0.81347150260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0x-aL-xDg">
@@ -132,58 +132,74 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QdH-o4-8lV">
-                                <rect key="frame" x="19" y="145" width="202.5" height="126"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="3HS-kG-STZ">
+                                <rect key="frame" x="20" y="129" width="179" height="180"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recent" translatesAutoresizingMaskIntoConstraints="NO" id="KDD-RV-UK0">
-                                        <rect key="frame" x="0.0" y="0.0" width="119.50000000000003" height="126"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGR-BV-Ntg">
-                                        <rect key="frame" x="119.5" y="0.0" width="83" height="126"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <state key="normal" title="    Gần đây">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8FG-K1-F2F">
-                                <rect key="frame" x="21" y="520" width="259" height="122.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share" translatesAutoresizingMaskIntoConstraints="NO" id="DZR-qL-xvG">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="122.5"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BT-PI-oQ1">
-                                        <rect key="frame" x="130" y="0.0" width="129" height="122.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <state key="normal" title="Chia sẽ gần đây">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ctl-8X-FWs">
-                                <rect key="frame" x="20" y="386" width="147" height="126"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="save" translatesAutoresizingMaskIntoConstraints="NO" id="apM-db-FAn">
-                                        <rect key="frame" x="0.0" y="0.0" width="84" height="126"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UG0-4k-97k">
-                                        <rect key="frame" x="94" y="0.0" width="53" height="126"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <state key="normal" title="Đã lưu">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QdH-o4-8lV">
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recent" translatesAutoresizingMaskIntoConstraints="NO" id="KDD-RV-UK0">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="rO5-i9-Bba"/>
+                                                    <constraint firstAttribute="height" constant="40" id="wyu-5F-3GD"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGR-BV-Ntg">
+                                                <rect key="frame" x="50" y="0.0" width="83" height="40"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <state key="normal" title="    Gần đây">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ctl-8X-FWs">
+                                        <rect key="frame" x="0.0" y="70" width="103" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="save" translatesAutoresizingMaskIntoConstraints="NO" id="apM-db-FAn">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="7rD-ht-bX8"/>
+                                                    <constraint firstAttribute="width" constant="40" id="ZFZ-lg-gyu"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UG0-4k-97k">
+                                                <rect key="frame" x="50" y="0.0" width="53" height="40"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <state key="normal" title="Đã lưu">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8FG-K1-F2F">
+                                        <rect key="frame" x="0.0" y="140" width="179" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share" translatesAutoresizingMaskIntoConstraints="NO" id="DZR-qL-xvG">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="0St-Ce-VKg"/>
+                                                    <constraint firstAttribute="width" constant="40" id="Dcg-KJ-jUH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BT-PI-oQ1">
+                                                <rect key="frame" x="50" y="0.0" width="129" height="40"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <state key="normal" title="Chia sẽ gần đây">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="3HS-kG-STZ" firstAttribute="leading" secondItem="C2I-OL-HVZ" secondAttribute="leading" constant="20" id="9ad-WF-9vn"/>
                             <constraint firstAttribute="trailing" secondItem="b4G-qV-BBF" secondAttribute="trailing" constant="20" id="B6S-9I-IqY"/>
+                            <constraint firstItem="3HS-kG-STZ" firstAttribute="top" secondItem="b4G-qV-BBF" secondAttribute="bottom" constant="30" id="l51-fm-nJ4"/>
                             <constraint firstItem="b4G-qV-BBF" firstAttribute="leading" secondItem="C2I-OL-HVZ" secondAttribute="leading" constant="20" id="uqc-8F-M5v"/>
                             <constraint firstItem="b4G-qV-BBF" firstAttribute="top" secondItem="C2I-OL-HVZ" secondAttribute="top" constant="20" id="x9W-Kd-Krf"/>
                         </constraints>
@@ -323,9 +339,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="h6Z-IU-29a">
-                                <rect key="frame" x="20" y="69" width="352" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="h6Z-IU-29a">
+                                <rect key="frame" x="20" y="64" width="374" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyR-Cl-dRR">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -336,98 +351,99 @@
                                         <state key="normal" image="back"/>
                                     </button>
                                     <searchBar contentMode="redraw" placeholder="Seach" translatesAutoresizingMaskIntoConstraints="NO" id="wKE-Xi-zrO">
-                                        <rect key="frame" x="52" y="0.0" width="300" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="300" id="Z04-0V-ZRz"/>
-                                        </constraints>
+                                        <rect key="frame" x="60" y="0.0" width="314" height="50"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hinhtruong" translatesAutoresizingMaskIntoConstraints="NO" id="dhj-tQ-IUq">
-                                <rect key="frame" x="20" y="147" width="352" height="252"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Cvg-lY-ROj">
-                                <rect key="frame" x="288" y="722" width="80" height="88"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share" translatesAutoresizingMaskIntoConstraints="NO" id="vYE-13-GdN">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="8Ob-Mt-isQ"/>
-                                            <constraint firstAttribute="height" constant="50" id="Y0u-f6-ODW"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="zvd-yW-XYD"/>
-                                        </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjZ-He-E8A">
-                                        <rect key="frame" x="0.0" y="58" width="80" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="tDx-4W-20o"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Chia sẽ">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="GRq-P6-26O" kind="show" id="UpW-J6-fJW"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hinhtruong" translatesAutoresizingMaskIntoConstraints="NO" id="dhj-tQ-IUq">
+                                <rect key="frame" x="20" y="134" width="374" height="374"/>
                                 <constraints>
-                                    <constraint firstItem="HjZ-He-E8A" firstAttribute="top" secondItem="vYE-13-GdN" secondAttribute="bottom" constant="8" symbolic="YES" id="CDz-tf-cqX"/>
-                                    <constraint firstAttribute="width" constant="80" id="leR-b0-ZM7"/>
+                                    <constraint firstAttribute="height" constant="374" id="KxS-t7-WqK"/>
+                                    <constraint firstAttribute="width" constant="374" id="pIH-2R-vsF"/>
                                 </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dbr-st-Ubg">
-                                <rect key="frame" x="184" y="722" width="50" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BDK-Bg-6EV">
+                                <rect key="frame" x="20" y="732" width="374" height="80"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="save" translatesAutoresizingMaskIntoConstraints="NO" id="M5A-43-bcY">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="uSa-Df-BYj"/>
-                                            <constraint firstAttribute="height" constant="50" id="wEd-S9-Q6w"/>
-                                        </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PnY-aU-rhN">
-                                        <rect key="frame" x="0.0" y="58" width="50" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="95" id="Z7j-zX-aVy"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Đã lưu">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="A5n-mw-oPb" kind="show" id="l79-x9-AbG"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8ec-pX-4Gj">
-                                <rect key="frame" x="40" y="722" width="95" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="kwu-EC-Dbv">
-                                        <rect key="frame" x="22.5" y="0.0" width="50" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="7t4-0k-igE"/>
-                                            <constraint firstAttribute="width" constant="50" id="La2-Ln-4Y9"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="McN-aR-Hjq"/>
-                                            <constraint firstAttribute="height" constant="50" id="W2e-HW-j5g"/>
-                                        </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHx-Ya-zOa">
-                                        <rect key="frame" x="0.0" y="58" width="95" height="30"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Khoảng cách">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8ec-pX-4Gj">
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="kwu-EC-Dbv">
+                                                <rect key="frame" x="39" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="MPb-Kp-IHr"/>
+                                                    <constraint firstAttribute="width" constant="40" id="yxN-BB-QGc"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHx-Ya-zOa">
+                                                <rect key="frame" x="11.5" y="50" width="95" height="30"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Khoảng cách">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dbr-st-Ubg">
+                                        <rect key="frame" x="128" y="0.0" width="118" height="80"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="save" translatesAutoresizingMaskIntoConstraints="NO" id="M5A-43-bcY">
+                                                <rect key="frame" x="39" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="SHq-wf-2cw"/>
+                                                    <constraint firstAttribute="width" constant="40" id="y7L-G5-Kqr"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PnY-aU-rhN">
+                                                <rect key="frame" x="35" y="50" width="48" height="30"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Đã lưu">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="A5n-mw-oPb" kind="show" id="l79-x9-AbG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cvg-lY-ROj">
+                                        <rect key="frame" x="256" y="0.0" width="118" height="80"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share" translatesAutoresizingMaskIntoConstraints="NO" id="vYE-13-GdN">
+                                                <rect key="frame" x="39" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="Sru-El-YjC"/>
+                                                    <constraint firstAttribute="height" constant="40" id="Wqy-H4-add"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjZ-He-E8A">
+                                                <rect key="frame" x="32" y="50" width="54" height="30"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Chia sẽ">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="GRq-P6-26O" kind="show" id="UpW-J6-fJW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dhj-tQ-IUq" firstAttribute="top" secondItem="h6Z-IU-29a" secondAttribute="bottom" constant="20" id="2pO-1W-6DF"/>
+                            <constraint firstItem="SJa-Kf-bWJ" firstAttribute="trailing" secondItem="BDK-Bg-6EV" secondAttribute="trailing" constant="20" id="51m-rA-fVP"/>
+                            <constraint firstItem="SJa-Kf-bWJ" firstAttribute="trailing" secondItem="dhj-tQ-IUq" secondAttribute="trailing" constant="20" id="ANV-AI-BpO"/>
+                            <constraint firstItem="dhj-tQ-IUq" firstAttribute="leading" secondItem="SJa-Kf-bWJ" secondAttribute="leading" constant="20" id="E8Z-NK-wWu"/>
+                            <constraint firstItem="h6Z-IU-29a" firstAttribute="leading" secondItem="SJa-Kf-bWJ" secondAttribute="leading" constant="20" id="PXd-BS-sca"/>
+                            <constraint firstItem="h6Z-IU-29a" firstAttribute="top" secondItem="SJa-Kf-bWJ" secondAttribute="top" constant="20" id="ixy-t2-C1a"/>
+                            <constraint firstItem="SJa-Kf-bWJ" firstAttribute="trailing" secondItem="h6Z-IU-29a" secondAttribute="trailing" constant="20" id="t3U-8D-uwC"/>
+                            <constraint firstItem="BDK-Bg-6EV" firstAttribute="leading" secondItem="SJa-Kf-bWJ" secondAttribute="leading" constant="20" id="x0H-RH-H9d"/>
+                            <constraint firstItem="SJa-Kf-bWJ" firstAttribute="bottom" secondItem="BDK-Bg-6EV" secondAttribute="bottom" constant="50" id="xKq-bj-gPM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="SJa-Kf-bWJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fqe-ih-BeN"/>
