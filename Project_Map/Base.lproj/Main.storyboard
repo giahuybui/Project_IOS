@@ -10,16 +10,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map Controller-->
         <scene sceneID="ZLb-Pj-jly">
             <objects>
-                <viewController id="ODb-cK-fU3" customClass="ViewController" customModule="Project_Map" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ODb-cK-fU3" customClass="MapController" customModule="Project_Map" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oH1-fU-EKK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TUc-aw-NVy">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="adm-oc-iTb">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gxe-G7-zBS">
                                 <rect key="frame" x="5" y="64" width="404" height="44"/>
@@ -83,24 +84,24 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0EM-bT-8Mw" firstAttribute="trailing" secondItem="Gxe-G7-zBS" secondAttribute="trailing" constant="5" id="HXz-wO-Qbf"/>
-                            <constraint firstItem="0EM-bT-8Mw" firstAttribute="bottom" secondItem="TUc-aw-NVy" secondAttribute="bottom" id="NXc-uf-7uN"/>
-                            <constraint firstItem="TUc-aw-NVy" firstAttribute="leading" secondItem="0EM-bT-8Mw" secondAttribute="leading" id="Y4e-Gh-S9r"/>
-                            <constraint firstItem="TUc-aw-NVy" firstAttribute="trailing" secondItem="0EM-bT-8Mw" secondAttribute="trailing" id="fIP-Xj-Z52"/>
                             <constraint firstItem="Gxe-G7-zBS" firstAttribute="leading" secondItem="0EM-bT-8Mw" secondAttribute="leading" constant="5" id="owg-zk-jf9"/>
                             <constraint firstItem="Gxe-G7-zBS" firstAttribute="top" secondItem="0EM-bT-8Mw" secondAttribute="top" constant="20" id="t9D-zV-DaW"/>
-                            <constraint firstItem="TUc-aw-NVy" firstAttribute="top" secondItem="oH1-fU-EKK" secondAttribute="top" id="u5f-6m-Qle"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0EM-bT-8Mw"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="adm-oc-iTb" id="V46-ZC-XI8"/>
+                        <outlet property="searchBar" destination="Tkn-vU-MYY" id="6lV-OO-om0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xqi-Cn-uAJ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5245" y="86"/>
+            <point key="canvasLocation" x="5244.9275362318849" y="85.714285714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu Controller-->
         <scene sceneID="cTI-rk-dY9">
             <objects>
-                <viewController id="C6f-qS-yHs" sceneMemberID="viewController">
+                <viewController id="C6f-qS-yHs" customClass="MenuController" customModule="Project_Map" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pcr-mN-rUF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,7 +128,7 @@
                                         </constraints>
                                         <state key="normal" image="click"/>
                                         <connections>
-                                            <segue destination="ODb-cK-fU3" kind="show" id="2We-CF-kBo"/>
+                                            <action selector="btnExit:" destination="C6f-qS-yHs" eventType="touchUpInside" id="gfI-er-ytZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -507,10 +508,10 @@
             </objects>
             <point key="canvasLocation" x="7941" y="808"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Controller-->
         <scene sceneID="7J6-bC-LnZ">
             <objects>
-                <viewController id="Zqu-BF-Qfg" sceneMemberID="viewController">
+                <viewController id="Zqu-BF-Qfg" customClass="LoginController" customModule="Project_Map" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w6J-pA-aSb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -561,7 +562,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aNh-tf-P8f" kind="show" id="vSP-Jn-GVh"/>
+                                    <segue destination="aNh-tf-P8f" kind="show" id="fv1-EQ-Y1Z"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nhóm 6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u37-dc-gSo">
@@ -580,22 +581,27 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="EHc-YL-2rd" kind="show" id="9lY-i9-q2U"/>
+                                    <action selector="btnLogin:" destination="Zqu-BF-Qfg" eventType="touchUpInside" id="cAt-QL-SJL"/>
+                                    <segue destination="ZAC-4V-p0J" kind="show" id="zy1-sS-sJS"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wkj-ot-I8x"/>
                     </view>
+                    <connections>
+                        <outlet property="edtPassword" destination="qMg-5q-vpj" id="oOf-Wt-ozS"/>
+                        <outlet property="edtUserName" destination="tCz-kg-Efb" id="GPw-TV-Wzv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kb9-rH-YUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2088" y="86"/>
         </scene>
-        <!--View Controller-->
+        <!--Signup Controller-->
         <scene sceneID="BDH-55-jD4">
             <objects>
-                <viewController id="aNh-tf-P8f" sceneMemberID="viewController">
+                <viewController id="aNh-tf-P8f" customClass="SignupController" customModule="Project_Map" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q2O-vE-F8f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -669,13 +675,19 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Zqu-BF-Qfg" kind="show" id="Kk6-yg-BrI"/>
+                                    <action selector="btnSignUp:" destination="aNh-tf-P8f" eventType="touchUpInside" id="j5n-AM-Jgw"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pT7-81-qxD"/>
                     </view>
+                    <connections>
+                        <outlet property="edtEmail" destination="eY1-5Q-KFu" id="T7r-fJ-lwc"/>
+                        <outlet property="edtName" destination="Uxl-jE-SE9" id="57j-Jy-hed"/>
+                        <outlet property="edtPass" destination="LaF-WX-f8K" id="3os-2P-wZT"/>
+                        <outlet property="edtRePass" destination="g0m-OT-N2I" id="CfQ-j1-x9V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58n-6t-LPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -706,9 +718,6 @@
                                 <state key="normal" title="Đăng Nhập">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="ZAC-4V-p0J" kind="show" id="Glh-lA-ooK"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bạn đã có tài khoảng chưa ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqW-j0-vst">
                                 <rect key="frame" x="51" y="719" width="216" height="34"/>
@@ -732,7 +741,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JLf-3e-7TB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3152" y="86"/>
+            <point key="canvasLocation" x="3151" y="808"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zdd-rT-rCy">
@@ -760,7 +769,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ODb-cK-fU3" kind="show" id="gOv-cz-3PI"/>
+                                    <segue destination="ODb-cK-fU3" kind="show" id="5Cf-DV-i5w"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -770,7 +779,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3uI-Kd-GDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4188" y="86"/>
+            <point key="canvasLocation" x="3694" y="86"/>
         </scene>
     </scenes>
     <resources>
@@ -788,8 +797,6 @@
         <image name="share" width="120" height="122.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="l79-x9-AbG"/>
-        <segue reference="fPH-Sr-xrV"/>
-        <segue reference="2We-CF-kBo"/>
+        <segue reference="CKa-dB-g0w"/>
     </inferredMetricsTieBreakers>
 </document>
