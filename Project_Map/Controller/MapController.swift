@@ -1,23 +1,21 @@
 //
-//  ViewController.swift
+//  MapViewController.swift
 //  Project_Map
 //
-//  Created by CNTT on 5/14/23.
+//  Created by CNTT on 5/30/23.
 //  Copyright © 2023 fit.tdc. All rights reserved.
 //
 
 import UIKit
 import MapKit
 import CoreLocation
-
 class MapController: UIViewController, MKMapViewDelegate,CLLocationManagerDelegate,UISearchBarDelegate {
-
-    @IBOutlet weak var searchBar: UISearchBar!
-//    @IBAction func searchButton(_ sender: Any) {
-//        let searchController = UISearchController(searchResultsController: nil)
-//        searchController.searchBar.delegate = self
-//        present(searchController, animated: true, completion: nil)
-//    }
+    
+    @IBAction func searchButton(_ sender: Any) {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.delegate = self
+        present(searchController, animated: true, completion: nil)
+    }
     
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
@@ -25,9 +23,11 @@ class MapController: UIViewController, MKMapViewDelegate,CLLocationManagerDelega
     var previousAnnotation: MKPointAnnotation?
     var currentRouteOverlay: MKOverlay?
     
+    var recent: Recently?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-	
+        
         mapView.delegate = self
         
         locationManager.delegate = self
@@ -35,6 +35,7 @@ class MapController: UIViewController, MKMapViewDelegate,CLLocationManagerDelega
         locationManager.startUpdatingLocation()
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         mapView.addGestureRecognizer(tapGesture);
+        
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -172,6 +173,7 @@ class MapController: UIViewController, MKMapViewDelegate,CLLocationManagerDelega
             if let firstResult = response.mapItems.first {
                 let annotation = MKPointAnnotation()
                 annotation.title = firstResult.name
+                self.recent?.setRecent(firstResult.name ?? "")
                 annotation.coordinate = firstResult.placemark.coordinate
                 
                 // Calculate distance
@@ -185,7 +187,7 @@ class MapController: UIViewController, MKMapViewDelegate,CLLocationManagerDelega
                 self.mapView.addAnnotation(annotation)
                 
                 // Zooming in on the annotation
-                let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+                let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
                 let region = MKCoordinateRegion(center: annotation.coordinate, span: span)
                 self.mapView.setRegion(region, animated: true)
                 
@@ -193,5 +195,6 @@ class MapController: UIViewController, MKMapViewDelegate,CLLocationManagerDelega
             }
         }
     }
-
+    
+    
 }
