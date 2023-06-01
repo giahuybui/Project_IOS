@@ -98,7 +98,6 @@ class MapController: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
             }
             alertController.addAction(okAction)
             self.present(alertController, animated: true, completion: nil)
-            
         }
         
         previousAnnotation = annotation

@@ -175,13 +175,11 @@ class Database {
     // 3. Lay user dua vao email va password tu co so du lieu
     public func getUserByEmail(email: String, pass: String) -> [User] {
         var users: [User] = []
-        
         if open() {
             var result:FMResultSet?
             // cau lenh sql
             let sql = "SELECT * FROM \(USER_TABLE_NAME) WHERE \(USER_EMAIL) = ? AND \(USER_PASS) = ?"
             let value = [email, pass]
-            
             do {
                 // thuc thi cau lenh sql
                 result = try Database!.executeQuery(sql, values: value)
@@ -189,7 +187,6 @@ class Database {
             catch {
                 os_log("Khong the doc user database")
             }
-            
             // xy li du lieu doc ve
             if let result = result {
                 while (result.next()) {
@@ -203,11 +200,8 @@ class Database {
                     }
                 }
             }
-            
             let _ = close()
-            
         }
-        
         return users
     }
 }
