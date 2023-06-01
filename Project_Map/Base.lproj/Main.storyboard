@@ -274,7 +274,9 @@
                             <outlet property="delegate" destination="WWz-fO-7JP" id="V8U-ah-CbZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Đã lưu" id="Y7Z-6j-0Ch"/>
+                    <navigationItem key="navigationItem" title="Đã lưu" id="Y7Z-6j-0Ch">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="eUo-tW-fiP"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RiU-CM-mUF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
