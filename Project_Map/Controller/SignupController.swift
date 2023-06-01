@@ -59,7 +59,7 @@ class SignupController: UIViewController, UITextFieldDelegate {
         let repass = edtRePass.text ?? ""
         
         if repass == pass {
-            if name != "" || email != "" || pass != "" || repass != "" {
+            if name != "" && email != "" && pass != "" && repass != "" {
                 user = User(name: name, email: email, pass: pass)
                 ok = true
             }

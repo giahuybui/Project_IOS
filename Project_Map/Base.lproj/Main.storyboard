@@ -289,7 +289,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="h6Z-IU-29a">
-                                <rect key="frame" x="20" y="108" width="374" height="50"/>
+                                <rect key="frame" x="20" y="64" width="374" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyR-Cl-dRR">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -307,7 +307,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hinhtruong" translatesAutoresizingMaskIntoConstraints="NO" id="dhj-tQ-IUq">
-                                <rect key="frame" x="20" y="178" width="374" height="374"/>
+                                <rect key="frame" x="20" y="134" width="374" height="374"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="374" id="KxS-t7-WqK"/>
                                     <constraint firstAttribute="width" constant="374" id="pIH-2R-vsF"/>
@@ -621,56 +621,6 @@
             <point key="canvasLocation" x="2855" y="-635"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="SHS-xh-l0s">
-            <objects>
-                <viewController id="EHc-YL-2rd" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UPv-om-d87">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="FmF-Kk-wug">
-                                <rect key="frame" x="147" y="141" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logomap" translatesAutoresizingMaskIntoConstraints="NO" id="xRU-bi-Vpd">
-                                <rect key="frame" x="117" y="281" width="180" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.13309331960000001" green="0.5600639315" blue="0.91709844549999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRZ-db-7lJ">
-                                <rect key="frame" x="133" y="651" width="149" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1210887205" green="0.50954792500000001" blue="0.83437904789999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                <state key="normal" title="Đăng Nhập">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bạn đã có tài khoảng chưa ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqW-j0-vst">
-                                <rect key="frame" x="51" y="719" width="216" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.13309331960000001" green="0.5600639315" blue="0.91709844549999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhX-w4-7RX">
-                                <rect key="frame" x="275" y="719" width="71" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Đăng ký">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Kkl-1U-NqP"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JLf-3e-7TB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3151" y="808"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="zdd-rT-rCy">
             <objects>
                 <viewController id="ZAC-4V-p0J" sceneMemberID="viewController">
@@ -696,7 +646,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="I1x-oy-nwT" kind="show" id="5Cf-DV-i5w"/>
+                                    <segue destination="I1x-oy-nwT" kind="show" id="VAW-Ap-xIF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -743,6 +693,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ZTV-RK-rpA"/>
-        <segue reference="CKa-dB-g0w"/>
+        <segue reference="JaM-EW-zVv"/>
     </inferredMetricsTieBreakers>
 </document>

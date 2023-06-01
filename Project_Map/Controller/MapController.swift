@@ -23,8 +23,6 @@ class MapController: UIViewController, MKMapViewDelegate,CLLocationManagerDelega
     var previousAnnotation: MKPointAnnotation?
     var currentRouteOverlay: MKOverlay?
     
-    var recent: Recently?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -173,7 +171,6 @@ class MapController: UIViewController, MKMapViewDelegate,CLLocationManagerDelega
             if let firstResult = response.mapItems.first {
                 let annotation = MKPointAnnotation()
                 annotation.title = firstResult.name
-                self.recent?.setRecent(firstResult.name ?? "")
                 annotation.coordinate = firstResult.placemark.coordinate
                 
                 // Calculate distance

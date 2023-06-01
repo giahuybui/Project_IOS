@@ -17,7 +17,6 @@
 		6601D4AF2A20F2F400A48B8E /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6601D4AE2A20F2F400A48B8E /* SignupController.swift */; };
 		6602C2282A264E090001CD9F /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6602C2272A264E090001CD9F /* MenuController.swift */; };
 		660550892A2742DE0008D102 /* ShareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660550882A2742DE0008D102 /* ShareController.swift */; };
-		661CCC152A2796F2008A751F /* Recently.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661CCC142A2796F2008A751F /* Recently.swift */; };
 		661D72F92A20CAE700C9FB4F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 661D72F82A20CAE700C9FB4F /* libsqlite3.0.tbd */; };
 		664205FB2A10DDF700690DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664205FA2A10DDF700690DEC /* AppDelegate.swift */; };
 		664205FD2A10DDF700690DEC /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664205FC2A10DDF700690DEC /* MapController.swift */; };
@@ -27,6 +26,7 @@
 		664206102A10DDF900690DEC /* Project_MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6642060F2A10DDF900690DEC /* Project_MapTests.swift */; };
 		6642061B2A10DDF900690DEC /* Project_MapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6642061A2A10DDF900690DEC /* Project_MapUITests.swift */; };
 		66AF2EAC2A1CB3E700F7CED4 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AF2EAB2A1CB3E700F7CED4 /* LoginController.swift */; };
+		66B602E62A27B1210031C0B7 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B602E52A27B1210031C0B7 /* test.swift */; };
 		66D5AB632A274C8900433D7A /* SaveTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D5AB622A274C8900433D7A /* SaveTableViewController.swift */; };
 		66D5AB652A2760AF00433D7A /* RecentlyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D5AB642A2760AF00433D7A /* RecentlyTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -66,7 +66,6 @@
 		6601D4AE2A20F2F400A48B8E /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		6602C2272A264E090001CD9F /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		660550882A2742DE0008D102 /* ShareController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareController.swift; sourceTree = "<group>"; };
-		661CCC142A2796F2008A751F /* Recently.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recently.swift; sourceTree = "<group>"; };
 		661D72F82A20CAE700C9FB4F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		664205F72A10DDF700690DEC /* Project_Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_Map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		664205FA2A10DDF700690DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +81,7 @@
 		6642061A2A10DDF900690DEC /* Project_MapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_MapUITests.swift; sourceTree = "<group>"; };
 		6642061C2A10DDF900690DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66AF2EAB2A1CB3E700F7CED4 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		66B602E52A27B1210031C0B7 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		66D5AB622A274C8900433D7A /* SaveTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTableViewController.swift; sourceTree = "<group>"; };
 		66D5AB642A2760AF00433D7A /* RecentlyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				6601D4AC2A20ED5900A48B8E /* User.swift */,
-				661CCC142A2796F2008A751F /* Recently.swift */,
 			);
 			name = DataModel;
 			sourceTree = "<group>";
@@ -194,6 +193,7 @@
 		664205F92A10DDF700690DEC /* Project_Map */ = {
 			isa = PBXGroup;
 			children = (
+				66B602E42A27B0FC0031C0B7 /* Control */,
 				66AF2EAD2A1CB72000F7CED4 /* DAL */,
 				6608B4FE2A18C57D0045B635 /* Controller */,
 				664205FE2A10DDF700690DEC /* Main.storyboard */,
@@ -239,6 +239,14 @@
 				6601D4A82A20E6F300A48B8E /* Database.swift */,
 			);
 			name = DAL;
+			sourceTree = "<group>";
+		};
+		66B602E42A27B0FC0031C0B7 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				66B602E52A27B1210031C0B7 /* test.swift */,
+			);
+			path = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +386,7 @@
 				6601D4A92A20E6F300A48B8E /* Database.swift in Sources */,
 				66D5AB652A2760AF00433D7A /* RecentlyTableViewController.swift in Sources */,
 				66AF2EAC2A1CB3E700F7CED4 /* LoginController.swift in Sources */,
+				66B602E62A27B1210031C0B7 /* test.swift in Sources */,
 				6601D4AF2A20F2F400A48B8E /* SignupController.swift in Sources */,
 				6602C2282A264E090001CD9F /* MenuController.swift in Sources */,
 				664205FB2A10DDF700690DEC /* AppDelegate.swift in Sources */,
@@ -388,7 +397,6 @@
 				6601D4AD2A20ED5900A48B8E /* User.swift in Sources */,
 				6601D4A52A20E5C900A48B8E /* FMResultSet.m in Sources */,
 				660550892A2742DE0008D102 /* ShareController.swift in Sources */,
-				661CCC152A2796F2008A751F /* Recently.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
